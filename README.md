@@ -18,3 +18,8 @@ Goals:
 Bonus goal:
 
 * make the caching adapter compliant to PSR simple cache (eg: implement said interfaces)
+
+## Start Stack ##
+
+`docker compose run --entrypoint "composer install"  php-cli` - installs composer dependencies
+`docker compose up -d` - starts server
