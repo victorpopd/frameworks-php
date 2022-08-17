@@ -35,3 +35,9 @@ will expect that the function will return an implementation of LoggerInterface. 
 
 * `docker compose run --entrypoint "composer install"  php-cli` - installs composer dependencies
 * `docker compose up -d` - starts server
+
+## Reading ##
+
+* <https://www.php-fig.org/psr/>
+* <https://php-di.org/doc/autowiring.html>
+* <https://route.thephpleague.com/5.x/controllers/>
