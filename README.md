@@ -21,5 +21,5 @@ Bonus goal:
 
 ## Start Stack ##
 
-`docker compose run --entrypoint "composer install"  php-cli` - installs composer dependencies
-`docker compose up -d` - starts server
+* `docker compose run --entrypoint "composer install"  php-cli` - installs composer dependencies
+* `docker compose up -d` - starts server
