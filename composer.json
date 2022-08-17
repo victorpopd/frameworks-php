@@ -1,0 +1,25 @@
+{
+    "name": "andrei/frameworks",
+    "description": "Frameworks Workshop",
+    "type": "project",
+    "require": {
+        "nyholm/psr7": "^1.5",
+        "laminas/laminas-diactoros": "^2.14",
+        "php-di/php-di": "^6.4",
+        "spiral/roadrunner": "^2.10",
+        "league/route": "^5.1",
+        "doctrine/annotations": "^1.13"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrei"
+        }
+    ],
+    "minimum-stability": "stable"
+}
