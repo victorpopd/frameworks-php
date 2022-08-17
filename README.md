@@ -19,6 +19,18 @@ Bonus goal:
 
 * make the caching adapter compliant to PSR simple cache (eg: implement said interfaces)
 
+Hint:
+
+* the container is just a key/value array. The key is just a string, however what makes Autowiring tick is the convention that the key should be a class or prefferably interface describing what the value will be (or what the function wil return). An entry like
+
+```php
+LoggerInterface => function() {
+  ....
+},
+```
+
+will expect that the function will return an implementation of LoggerInterface. Nothing will break if you return a string (for example), but if you ever use the interface in a constructor like `function __construct(LoggerInterface $logger)` you might get an error when the DI container tries to pass a string instead of a LoggerInterface object.
+
 ## Start Stack ##
 
 * `docker compose run --entrypoint "composer install"  php-cli` - installs composer dependencies
