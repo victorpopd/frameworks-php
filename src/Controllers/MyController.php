@@ -7,6 +7,7 @@ use App\Services\MyTestService;
 use Laminas\Diactoros\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use App\Services\RedisAdapter;
 
 class MyController
 {
@@ -29,4 +30,5 @@ class MyController
 
         return $response;
     }
+
 }

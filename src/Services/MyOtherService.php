@@ -7,7 +7,7 @@ use DI\Annotation\Inject;
 
 class MyOtherService
 {
-    /** @Inject("db.host") */
+    /** @Inject("cache.engine") */
     private string $test;
 
     public function __construct(private MyTestService $service)

@@ -8,7 +8,8 @@
         "php-di/php-di": "^6.4",
         "spiral/roadrunner": "^2.10",
         "league/route": "^5.1",
-        "doctrine/annotations": "^1.13"
+        "doctrine/annotations": "^1.13",
+      "ext-redis": "*"
     },
     "license": "MIT",
     "autoload": {

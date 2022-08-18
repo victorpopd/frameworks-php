@@ -7,9 +7,12 @@ services:
       - .:/application
     environment:
       - XDEBUG_MODE=off
+      - CACHE_ENGINE=redis
     ports:
-      - 8585:8080
+      - "8585:8080"
     entrypoint:
       - /bin/sh
       - -c
       - /usr/bin/rr serve -c .rr.dev.yaml
+  redis:
+    image: redis:6.2
